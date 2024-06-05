@@ -1,10 +1,11 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import BaseSpinner from './components/BaseSpinner.vue'
+import HomeLogin from './components/HomeLogin.vue'
 
 export default{
   components:{
-    BaseSpinner
+    HomeLogin
   },
   mounted() {
     console.log(this.$firebase)
@@ -14,9 +15,10 @@ export default{
 
 <template>
   <v-app class="base-app">
-    <div class="flexbox">
-      <BaseSpinner/>
-    </div>
+    <HomeLogin />
+    <!-- <div class="flexbox"> -->
+      <!-- <BaseSpinner/> -->
+    <!-- </div> -->
   </v-app>
 </template>
 
