@@ -3,7 +3,9 @@ import './assets/scss/app.scss'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import FirebaseVue from './firebase'
 import './assets/scss/app.scss'
+
 
 // Vuetify
 import 'vuetify/styles'
@@ -19,5 +21,6 @@ const app = createApp(App)
 
 app.use(router)
 app.use(vuetify)
+app.config.globalProperties.$firebase = FirebaseVue;
 
 app.mount('#app')

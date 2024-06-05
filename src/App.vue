@@ -5,7 +5,10 @@ import BaseSpinner from './components/BaseSpinner.vue'
 export default{
   components:{
     BaseSpinner
-  }
+  },
+  mounted() {
+    console.log(this.$firebase)
+  },
 }
 </script>
 
